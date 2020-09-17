@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Javascript on steroids</title>
+</head>
+<body>
+    <section id="blackjack">
+        <h2>Challenge 5: Blackjack</h2>
+        <h3 id="status"><span>Let's play!</span></h3>
+
+        <div class="flex-blackjack-row-1">
+            <div id="your-box">
+                <h2>You: <span id="your-blackjack-result">0</span></h2>
+            </div>
+            <div id="dealer-box">
+                <h2>Dealer: <span id="dealer-blackjack-result">0</span></h2>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-2">
+            <div>
+                <button style="background: royalblue; margin-right: 2px;" onclick="humanPlayer.hit()" id="hit">Hit</button>
+                <button style="background: yellow; color: black; margin-right: 2px;" onclick="bot.hit()" id="stand">Stand</button>
+                <button style="background: red;" onclick="deal()" id="deal">Deal</button>
+            </div>
+        </div>
+        <div class="flex-blackjack-row-3">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Losses</th>
+                        <th>Draws</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="static/js/script.js"></script>
+</body>
+</html>

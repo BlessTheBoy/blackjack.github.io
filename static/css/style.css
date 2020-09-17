@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+section{
+    border: 1px solid black;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto 50px;
+    height: 100vh;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+button{
+    padding: 8px;
+    font: .9em sans-serif;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.flex-blackjack-row-1 div{
+    border: 1px solid black;
+    min-height: 350px;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2{
+    background: url("../img/table.jpg") center;
+    /*color: white;*/
+}
+
+.flex-blackjack-row-2 button{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.flex-blackjack-row-2 div{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+table, tr, th {
+    margin: 0;
+    padding: 5px;
+}
+
+#your-box h2{
+    color: white;
+    font-size: 1.5em;
+}
+
+#dealer-box h2{
+    color: white;
+    font-size: 1.5em;
+}
+
+#status{
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+#blackjack h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
